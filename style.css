@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Roboto:wght@400;500&display=swap");
+
+* {
+  outline: none; /*To remove outline in chrome*/
+}
+
+/*To remove dotted outline in firefox*/
+button::-moz-focus-inner {
+  border: 0;
+}
+
+button:focus {
+  outline: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #ffffff;
+}
+
+.logo {
+  margin-left: 127px;
+  font-family: "lato";
+  font-size: 32px;
+}
+
+.first-logo {
+  color: #023047;
+}
+
+.second-logo {
+  color: #fb8500;
+}
+
+.add-note {
+  width: 97px;
+  height: 31px;
+  font-family: "lato";
+  font-size: 12px;
+  color: #023047;
+  border: 2px solid #023047;
+  margin-right: 128px;
+}
+
+.note {
+  position: relative;
+  width: 235px;
+  height: 142px;
+  display: inline-block;
+  background-color: #ffffff;
+  text-align: center;
+  vertical-align: top;
+  margin: 1vw;
+  padding-bottom: 5px;
+  box-shadow: 0px 2px 4px #00000029;
+  border-radius: 4px;
+}
+
+.note-title {
+  font-family: "Roboto";
+  color: #023047;
+  width: 75%;
+  height: 25px;
+  background-color: transparent;
+  display: inline-block;
+  font-size: 19px;
+  border: none;
+  resize: none;
+  overflow: hidden;
+  margin: 0;
+}
+
+.note-content {
+  font-family: "Roboto";
+  color: #333333;
+  font-size: 16px;
+  margin: 0;
+  width: 75%;
+  height: 100px;
+  background-color: transparent;
+  display: inline-block;
+  resize: none;
+  overflow: hidden;
+  border: none;
+}
+
+.option-button {
+  float: right;
+  position: absolute;
+  bottom: 100px;
+  padding-right: 30px;
+  height: 30px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 20px;
+  color: gray;
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+
+.note-menu {
+  position: absolute;
+  left: 70%;
+  z-index: 3;
+  background-color: #ffffff;
+  display: inline-block;
+  width: 148px;
+  height: 70px;
+  padding: 5px 5px 0px 5px;
+  box-shadow: 0px 2px 4px #00000029;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.color-option {
+  display: "inline-block";
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  border: 1px solid gray;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.color-option:active {
+  position: relative;
+  bottom: 5px;
+}
+
+.delete-note {
+  display: inline-block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.delete-note:active {
+  position: relative;
+  bottom: 5px;
+}
+
+.delete-text {
+  font-family: "Roboto";
+  color: #343434;
+  margin: 0px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 1450px) {
+  .note {
+    width: 22.75%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .note {
+    width: 31%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .note {
+    width: 47.5%;
+  }
+
+  .note-menu {
+    width: 140px;
+    padding: 3px;
+  }
+
+  .color-option {
+    margin: 3px;
+  }
+
+  .note-title {
+    font-size: 18px;
+    font-weight: 600;
+    width: 80%;
+  }
+
+  .add-button {
+    height: 90px;
+    width: 90px;
+    font-size: 64px;
+  }
+
+  .delete-note {
+    margin: 0;
+  }
+
+  .add-button:active {
+    transform: translate(0, -10px);
+  }
+
+  .option-button {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}
